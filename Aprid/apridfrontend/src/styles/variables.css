@@ -1,0 +1,14 @@
+
+#root {
+  min-width: 100%;
+}
+
+body.oscuro {
+  --bg: #333;
+  --text: #fafafa;
+
+}
+body.claro {
+    --bg: #fafafa;
+  --text: #333;
+}

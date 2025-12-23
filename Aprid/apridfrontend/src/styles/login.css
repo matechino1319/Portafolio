@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --primary: #0187C4;
+  --primary-dark: #016da0;
+  --text: #1e1e1e;
+  --radius: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Contenedor centrador */
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EAEEFF; /* fondo solo para el área del login */
+}
+
+/* Caja del formulario */
+.wrapper {
+  width: 90%;
+  max-width: 400px;
+  background: #E1E5FA;
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.wrapper h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  outline: none;
+  background: transparent;
+  transition: 0.3s;
+  color: var(--text);
+}
+
+.input-box input:focus {
+  border-color: var(--primary);
+}
+
+.input-box label {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.3s ease all;
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label {
+  top: -8px;
+  font-size: 13px;
+  color: var(--primary);
+  background: #E1E5FA;
+  padding: 0 4px;
+}
+
+.forgot {
+  text-align: right;
+}
+
+.forgot a {
+  font-size: 14px;
+  color: #666;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.forgot a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.btn {
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--primary);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--primary-dark);
+}
+
+/* Media Queries */
+@media (max-width: 500px) {
+  .wrapper {
+    padding: 1.5rem;
+  }
+
+  .wrapper h1 {
+    font-size: 1.5rem;
+  }
+
+  .input-box input {
+    padding: 10px 8px;
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 450px;
+    padding: 3rem;
+  }
+
+  .wrapper h1 {
+    font-size: 2.2rem;
+  }
+
+  .input-box input {
+    padding: 14px 12px;
+    font-size: 17px;
+  }
+
+  .btn {
+    font-size: 18px;
+    padding: 16px;
+  }
+}

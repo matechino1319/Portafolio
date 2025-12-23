@@ -1,0 +1,68 @@
+.gestion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.buscar-wrapper {
+  margin-bottom: 20px;
+}
+
+.buscar-wrapper input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #d7d7d7;
+  outline: none;
+  font-size: 16px;
+}
+
+.buscar-wrapper input:focus {
+  border-color: #0187C4;
+}
+
+.btn-add {
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.15s ease;
+}
+.btn-add:hover {
+  transform: scale(1.05);
+}
+
+.tabla-wrapper {
+  overflow-x: auto;
+}
+
+
+.edit-icon {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.mensaje-vacio {
+  padding: 25px;
+  font-size: 16px;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .gestion-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .btn-add {
+    width: 100%;
+    text-align: center;
+  }
+
+  th, td {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

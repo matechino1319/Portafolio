@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --primary: #0187C4;
+  --primary-dark: #016da0;
+  --text: #1e1e1e;
+  --radius: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  padding: 0 0.3em 8px;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  color: var(--text);
+}
+
+label {
+  font-weight: 600;
+  flex: 1;
+}
+
+input,
+textarea {
+  flex: 2;
+  color: var(--text);
+  border: none;
+  border-bottom: 2px solid var(--primary);
+  padding: 5px;
+  outline: none;
+  font-size: 15px;
+  background: transparent;
+}
+
+textarea {
+  resize: none;
+  height: 60px;
+}
+.btn {
+  padding: 14px;
+  /* margin: 0 1rem; */
+  background: var(--primary);
+  border: none;
+  border-radius: var(--radius);
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.btn:hover {
+  background: var(--primary-dark);
+}
+.btn-add {
+  margin-left: auto;
+  padding: 9px 18px;
+  background: var(--primary);
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  transition: all 0.2s ease;
+}
+.btn-add:hover {
+  transform: scale(1.05);
+}
+
+.general-container {
+  max-width: 900px;
+  padding: 2em 1em;
+  margin: auto;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    text-align: center;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+th, td {
+  padding: 13px;
+  font-size: 15px;
+  text-align: center;
+}
+th {
+  background: rgba(1, 135, 196, 0.12);
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background: #fafafa;
+}
+
+td button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 6px;
+  transition: .15s ease;
+}
+
+td button:hover {
+  transform: scale(1.2);
+}
+
+.mensaje-vacio {
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+th, td {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+
+@media (min-width: 1500px) {
+  .general-container {
+    /* max-width: 1400px; */
+    margin: auto;
+  }
+}

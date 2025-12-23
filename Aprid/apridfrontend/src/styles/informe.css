@@ -1,0 +1,77 @@
+.filtros {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.filtros-grid {
+  display: grid;
+  gap: 15px;
+}
+
+.filtro-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filtros input,
+.filtros select {
+  padding: 10px 12px;
+  border-radius: var(--radius);
+  border: 1px solid #d4d4d4;
+  font-size: 15px;
+  outline: none;
+}
+
+.btn-limpiar {
+  background: #e74c3c;
+  border: none;
+  padding: 12px;
+  color: white;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+  align-self: flex-end;
+}
+
+.btn-limpiar:hover {
+  background: #c0392b;
+}
+
+@media (min-width: 768px) {
+  .filtros input,
+  .filtros select {
+    padding: 10px 5px;
+  }
+  .filtros-grid {
+    gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .filtros input,
+  .filtros select {
+    padding: 10px 15px;
+  }
+  .filtros-grid {
+    gap: 15px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .filtros {
+    padding: 30px;
+  }
+}
+
+/* TABLA */
+.tabla {
+  overflow-x: auto;
+}

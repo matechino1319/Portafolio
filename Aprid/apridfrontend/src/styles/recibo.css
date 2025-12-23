@@ -1,0 +1,104 @@
+.general-container h1 {
+  margin-bottom: 1.2rem;
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  text-align: center;
+  color: var(--text);
+}
+
+/* ======== FORMULARIO ======== */
+.recibo-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* ======== CAMPOS ======== */
+.recibo-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: 600;
+  color: var(--text);
+  width: 100%;
+}
+
+.recibo-form input,
+.recibo-form textarea {
+  width: 100%;
+  font-size: 1rem;
+  padding: 10px;
+  border: 1.8px solid rgba(1, 135, 196, 0.4);
+  border-radius: 8px;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.recibo-form input:focus,
+.recibo-form textarea:focus {
+  border-color: var(--primary);
+}
+
+/* Textarea */
+.recibo-form textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* Cuotas (inicio/fin) */
+.cuota-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cuota-duo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cuota-duo input {
+  flex: 1;
+}
+
+/* ======== BOTÓN ======== */
+.recibo-btn {
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.2s ease;
+}
+
+.recibo-btn:hover {
+  filter: brightness(0.95);
+}
+
+/* ======== RESPONSIVE ======== */
+@media (min-width: 600px) {
+  .recibo-form {
+    padding: 2rem;
+  }
+
+  .cuota-duo {
+    flex-direction: row;
+  }
+
+  .recibo-btn {
+    align-self: center;
+    width: 60%;
+  }
+}
+

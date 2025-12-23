@@ -1,0 +1,88 @@
+
+.editar-content {
+   max-width: 768px;
+    margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.editar-form h1 {
+  margin-bottom: 20px;
+  color: var(--text);
+  text-align: center;
+}
+
+.editar-form h2 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.form-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+input {
+  padding: 10px;
+  border-radius: var(--radius);
+  border: 1px solid #ccc;
+  font-size: 15px;
+  background: transparent;
+  color: var(--text);
+}
+
+.btn-delete {
+  padding: 12px;
+  border: none;
+  border-radius: var(--radius);
+  background: #d9534f;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.2s ease;
+}
+
+.btn-delete:hover {
+  background: #c9302c;
+}
+
+@media (min-width: 768px) {
+
+  .form-grid {
+    flex-direction: row;
+     gap: 5em;
+    flex-wrap: wrap;
+  }
+}
+
+
+@media (min-width: 1200px) {
+ .btn-delete {
+    font-size: 20px;
+    padding: 16px;
+  }
+}
+
+@media (min-width: 1500px) {
+  
+  input {
+    font-size: 17px;
+    padding: 14px;
+  }
+
+  .btn-delete {
+    font-size: 22px;
+    padding: 18px;
+  }
+}

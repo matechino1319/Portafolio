@@ -1,0 +1,84 @@
+.ajustes-card {
+  width: 90%;
+  max-width: 900px;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.15);
+}
+
+.ajustes-card h1 {
+  margin-bottom: 20px;
+}
+
+/* Bloques */
+.bloque {
+  margin-top: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Botones */
+.opciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.opciones button {
+  padding: 8px 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+}
+
+/* Tema */
+.tema {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-tema {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-tema.activo {
+  outline: 2px solid #0187C4;
+}
+
+/* Colores */
+.colores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+  gap: 10px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cuadro {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .ajustes-card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .opciones {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
